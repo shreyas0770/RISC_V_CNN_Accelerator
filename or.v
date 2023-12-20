@@ -3,5 +3,4 @@ module or(
     output y);
 
     assign y = a|b;
-    end
-)
+endmodule
