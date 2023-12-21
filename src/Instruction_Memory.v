@@ -28,7 +28,7 @@ module Instruction_Memory(rst,A,RD);
 
 
 
- /* initial begin
+  initial begin
     mem[0] = 32'hFFC4A303;
     mem[1] = 32'h00832383;
     mem[0] = 32'h0064A423;
@@ -36,6 +36,6 @@ module Instruction_Memory(rst,A,RD);
     mem[0] = 32'h0062E233;
     mem[1] = 32'h00B62423;
 
-  end*/
+  end
 
-endmodule
+endmdule

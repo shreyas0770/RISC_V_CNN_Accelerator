@@ -16,7 +16,7 @@ fetch_cycle dut (
 
 .rst(rst),
 
-.PCSrCE (PCSrcE),
+.PCSrcE (PCSrcE),
 
 .PCTargetE (PCTargetE),
 
@@ -29,8 +29,7 @@ fetch_cycle dut (
 );
 
 always begin
-
-// Generation of clock clk = ~clk; #50;
+ clk = ~clk; #50;
 
 end
 
@@ -38,15 +37,22 @@ end
 
 initial begin
 
-rst <= 1b*theta ;
+rst <= 1'b0;
 
 #200;
 
-rst <=1b1
+rst <=1'b1;
 
-PCSrcE <= 1 b0;
-PCTargetE <= 32 h00000000;
+PCSrcE <= 1'b0;
+PCTargetE <= 32'h00000000;
 
 #500;
 
 $finish;
+end
+initial begin
+$dumpfile("dump.vcd");
+$dumpvars(0);
+
+end
+endmodule
