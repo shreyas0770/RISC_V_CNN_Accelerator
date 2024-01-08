@@ -29,7 +29,7 @@
 `include "Hazard_unit.v"
 
 
-module Pipeline_top(clk, rst);
+module Pipeline_Top(clk, rst);
 
     // Declaration of I/O
     input clk, rst;

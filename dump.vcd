@@ -1,247 +1,284 @@
 $date
-	Thu Dec 21 13:59:16 2023
+	Mon Jan  8 19:11:37 2024
 $end
 $version
-	Icarus Verilog
+	GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
 $end
 $timescale
-	1s
+	1 s
 $end
-$scope module Mux_3_by_1 $end
-$var wire 32 ! a [31:0] $end
-$var wire 32 " b [31:0] $end
-$var wire 32 # c [31:0] $end
-$var wire 2 $ s [1:0] $end
-$var wire 32 % d [31:0] $end
-$upscope $end
 $scope module tb $end
-$var wire 32 & PCPlus4D [31:0] $end
-$var wire 32 ' PCD [31:0] $end
-$var wire 32 ( InstrD [31:0] $end
-$var reg 1 ) PCSrcE $end
-$var reg 32 * PCTargetE [31:0] $end
-$var reg 1 + clk $end
-$var reg 1 , rst $end
 $scope module dut $end
-$var wire 1 ) PCSrcE $end
-$var wire 32 - PCTargetE [31:0] $end
-$var wire 1 + clk $end
-$var wire 1 , rst $end
-$var wire 32 . PC_F [31:0] $end
-$var wire 32 / PCPlus4F [31:0] $end
-$var wire 32 0 PCPlus4D [31:0] $end
-$var wire 32 1 PCF [31:0] $end
-$var wire 32 2 PCD [31:0] $end
-$var wire 32 3 InstrF [31:0] $end
-$var wire 32 4 InstrD [31:0] $end
-$var reg 32 5 InstrF_reg [31:0] $end
-$var reg 32 6 PCF_reg [31:0] $end
-$var reg 32 7 PCPlus4F_reg [31:0] $end
-$scope module IMEM $end
-$var wire 1 , rst $end
-$var wire 32 8 RD [31:0] $end
-$var wire 32 9 A [31:0] $end
-$upscope $end
-$scope module PC_MUX $end
-$var wire 32 : b [31:0] $end
-$var wire 1 ) s $end
-$var wire 32 ; c [31:0] $end
-$var wire 32 < a [31:0] $end
-$upscope $end
-$scope module PC_adder $end
-$var wire 32 = b [31:0] $end
-$var wire 32 > c [31:0] $end
-$var wire 32 ? a [31:0] $end
-$upscope $end
-$scope module Program_Counter $end
-$var wire 32 @ PC_Next [31:0] $end
-$var wire 1 + clk $end
-$var wire 1 , rst $end
-$var reg 32 A PC [31:0] $end
+$var wire 32 B ResultW[31:0] $end
+$var wire 32 ; WriteDataM[31:0] $end
+$var wire 1 = ResultSrcW $end
+$var wire 1 9 ResultSrcM $end
+$var wire 1 1 ResultSrcE $end
+$var wire 1 @ RegWriteW $end
+$var wire 1 8 RegWriteM $end
+$var wire 1 0 RegWriteE $end
+$var wire 32 ? ReadDataW[31:0] $end
+$var wire 5 6 RD_M[4:0] $end
+$var wire 5 + RD_E[4:0] $end
+$var wire 5 A RDW[4:0] $end
+$var wire 32 3 RD2_E[31:0] $end
+$var wire 32 2 RD1_E[31:0] $end
+$var wire 32 % PCTargetE[31:0] $end
+$var wire 1 $ PCSrcE $end
+$var wire 32 < PCPlus4W[31:0] $end
+$var wire 32 5 PCPlus4M[31:0] $end
+$var wire 32 * PCPlus4E[31:0] $end
+$var wire 32 ( PCPlus4D[31:0] $end
+$var wire 32 ) PCE[31:0] $end
+$var wire 32 & PCD[31:0] $end
+$var wire 1 7 MemWriteM $end
+$var wire 1 / MemWriteE $end
+$var wire 32 ' InstrD[31:0] $end
+$var wire 32 4 Imm_Ext_E[31:0] $end
+$var wire 1 . BranchE $end
+$var wire 32 > ALU_ResultW[31:0] $end
+$var wire 32 : ALU_ResultM[31:0] $end
+$var wire 1 - ALUSrcE $end
+$var wire 3 , ALUControlE[2:0] $end
+$scope module Fetch $end
+$var wire 1 " clk $end
+$var wire 1 # rst $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
-#0
 $dumpvars
-bx A
-bx @
-bx ?
-bx >
-b100 =
-bx <
-bx ;
-bx :
-bx 9
-b0 8
-b0 7
-b0 6
-b0 5
-b0 4
-b0 3
-b0 2
-bx 1
-b0 0
-bx /
-bx .
-bx -
-0,
-0+
-bx *
-x)
-b0 (
-b0 '
+#0
+b0 ,
 b0 &
-bx %
-bz $
-bz #
-bz "
-bz !
-$end
-#50
-b100 /
-b100 <
-b100 >
-b0 1
-b0 9
 b0 ?
-b0 A
-1+
-#100
-0+
-#150
-1+
-#200
-b10100000000001010010011 3
-b10100000000001010010011 8
-b100 .
-b100 ;
-b100 @
+0$
+09
+b0 B
+b0 ;
+00
+b0 <
+1"
+0#
+b0 +
+01
+b0 5
 b0 *
-b0 -
+b0 )
+b0 6
+b0 (
+0-
+b0 3
+0@
+07
+0=
+b0 '
+b0 A
+0/
+b0 %
+08
+b0 4
+0.
 b0 :
-0)
-1,
-0+
+b0 2
+b0 >
+#50
+0"
+#100
+1"
+#150
+0"
+#200
+1"
+1#
 #250
-b1100000000001100010011 3
-b1100000000001100010011 8
-b1000 .
-b1000 ;
-b1000 @
-b100 &
-b100 0
-b10100000000001010010011 (
-b10100000000001010010011 4
-b1000 /
-b1000 <
-b1000 >
-b100 1
-b100 9
-b100 ?
-b100 A
-b100 7
-b10100000000001010010011 5
-1+
+0"
 #300
-0+
+1"
+b10100000000001010010011 '
+b100 (
 #350
-b11000101000001110110011 3
-b11000101000001110110011 8
-b1100 .
-b1100 ;
-b1100 @
-b1000 &
-b1000 0
-b100 '
-b100 2
-b1100000000001100010011 (
-b1100000000001100010011 4
-b1100 /
-b1100 <
-b1100 >
-b1000 1
-b1000 9
-b1000 ?
-b1000 A
-b1000 7
-b100 6
-b1100000000001100010011 5
-1+
+0"
 #400
-0+
+1"
+b100 &
+10
+b101 +
+b100 *
+b1000 (
+b1100000000001100010011 '
+bx 3
+1-
+b101 %
+b101 4
 #450
-b10010000000011 3
-b10010000000011 8
-b10000 .
-b10000 ;
-b10000 @
-b1100 &
-b1100 0
-b1000 '
-b1000 2
-b11000101000001110110011 (
-b11000101000001110110011 4
-b10000 /
-b10000 <
-b10000 >
-b1100 1
-b1100 9
-b1100 ?
-b1100 A
-b1100 7
-b1000 6
-b11000101000001110110011 5
-1+
+0"
 #500
-0+
+1"
+b11 4
+b110 +
+bx ;
+b101 6
+b100 )
+b1000 &
+b100 5
+b111 %
+b11000101000001110110011 '
+b1100 (
+b1000 *
+b101 :
+18
 #550
-b100000000010010010011 3
-b100000000010010010011 8
-b10100 .
-b10100 ;
-b10100 @
-b10000 &
-b10000 0
-b1100 '
-b1100 2
-b10010000000011 (
-b10010000000011 4
-b10100 /
-b10100 <
-b10100 >
-b10000 1
-b10000 9
-b10000 ?
-b10000 A
-b10000 7
-b1100 6
-b10010000000011 5
-1+
+0"
 #600
-0+
+1"
+b1100 &
+b100 <
+bx ?
+b110 4
+b101 B
+b1000 )
+b111 +
+b101 >
+b110 6
+b11 :
+b10010000000011 '
+b1110 %
+bx 2
+b1000 5
+1@
+b1100 *
+0-
+b101 A
+b10000 (
 #650
-b100101000000010100110011 3
-b100101000000010100110011 8
-b11000 .
-b11000 ;
-b11000 @
-b10100 &
-b10100 0
-b10000 '
-b10000 2
-b100000000010010010011 (
-b100000000010010010011 4
-b11000 /
-b11000 <
-b11000 >
-b10100 1
-b10100 9
-b10100 ?
-b10100 A
-b10100 7
-b10000 6
-b100000000010010010011 5
-1+
+0"
 #700
-0+
+1"
+b10100 (
+b11 >
+b1000 <
+b10000 &
+b1000 +
+b11 B
+b0 4
+b1100 )
+11
+b11 ;
+b110 A
+b0 2
+b100000000010010010011 '
+b111 6
+b1000 :
+b1100 %
+1-
+b1100 5
+b10000 *
+b0 3
+#750
+0"
+#800
+1"
+bx 3
+01
+19
+b1000 >
+b11000 (
+b10000 )
+b10100 &
+b1100 <
+b1 4
+b1001 +
+b1000 B
+b10100 *
+b1000 6
+b0 ;
+b111 A
+b100101000000010100110011 '
+b10000 5
+b0 :
+b10001 %
+#850
+0"
+#900
+1"
+b11101 %
+b1010 +
+09
+b0 ?
+b1001 4
+b11100 (
+b0 >
+b10000 <
+b10100 )
+b11000 &
+b1 :
+bx ;
+b11000 *
+bx 2
+b0 B
+b1001 6
+1=
+b10100 5
+b1000 A
+bx '
+0-
+#950
+0"
+#1000
+1"
+x-
+b11000 )
+bx +
+bx %
+bx ,
+x$
+x1
+b10100 <
+bx ?
+x0
+b1 >
+bx 4
+b100000 (
+b1 B
+b1 ;
+b11100 &
+b11100 *
+b1001 A
+b1010 6
+x/
+b11000 5
+0=
+x.
+#1050
+0"
+#1100
+1"
+x8
+b11100 )
+x9
+b11000 <
+bx ;
+b100100 (
+bx :
+x7
+b11100 5
+b100000 *
+b100000 &
+b1010 A
+bx 6
+#1150
+0"
+#1200
+1"
+b100000 )
+bx >
+bx A
+bx (
+b11100 <
+x=
+bx B
+bx &
+x@
+b100100 *
+b100000 5

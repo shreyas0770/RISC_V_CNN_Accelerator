@@ -19,7 +19,6 @@ module Mux (a,b,s,c);
     output [31:0]c;
 
     assign c = (~s) ? a : b ;
-    
 endmodule
 
 module Mux_3_by_1 (a,b,c,s,d);
@@ -28,5 +27,4 @@ module Mux_3_by_1 (a,b,c,s,d);
     output [31:0] d;
 
     assign d = (s == 2'b00) ? a : (s == 2'b01) ? b : (s == 2'b10) ? c : 32'h00000000;
-    
 endmodule

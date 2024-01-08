@@ -11,10 +11,10 @@
 //    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
-`include "Mux.v"
-`include "PC.v"
-`include "Instruction_Memory.v"
-`include "PC_Adder.v"
+//`include "Mux.v"
+//`include "PC.v"
+//`include "Instruction_Memory.v"
+//`include "PC_Adder.v"
 
 module fetch_cycle(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
 
