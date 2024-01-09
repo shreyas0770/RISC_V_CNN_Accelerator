@@ -29,6 +29,7 @@ module ALU(A,B,Result,ALUControl,OverFlow,Carry,Zero,Negative);
                            (ALUControl == 3'b010) ? A & B :
                            (ALUControl == 3'b011) ? A | B :
                            (ALUControl == 3'b101) ? {{32{1'b0}},(Sum[31])} :
+                           (ALUControl == 3'b111) ? conv() :
                            {33{1'b0}};
     assign OverFlow = ((Sum[31] ^ A[31]) & 
                       (~(ALUControl[0] ^ B[31] ^ A[31])) &
