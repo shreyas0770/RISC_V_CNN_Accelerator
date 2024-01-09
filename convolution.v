@@ -1,8 +1,27 @@
-module convolution (
-  input [5:0] x0, x1, x2, x3, // Individual wires for x
-  input [5:0] h0, h1, h2, h3, // Individual wires for h
-  output reg [5:0] y0, y1, y2, y3, y4, y5, y6 // Individual wires for y
-);
+
+module convolution(
+    input [31:0] A,
+    input [31:0] B,
+    output [31:0] Result
+)
+
+    wire [5:0] x0, x1, x2, x3, // Individual wires for x
+    wire [5:0] h0, h1, h2, h3, // Individual wires for h
+    reg [5:0] y0, y1, y2, y3, y4, y5, y6 // Individual wires for y
+
+    // Break A into x0, x1, x2, x3
+        x0 = A[4:0];
+        x1 = A[9:5];
+        x2 = A[14:10];
+        x3 = A[19:15];
+
+     // Break B into h0, h1, h2, h3
+        h0 = B[4:0];
+        h1 = B[9:5];
+        h2 = B[14:10];
+        h3 = B[19:15];
+
+    assign Result[31:0] = {2'b00, y6, y5, y4, y3, y2, y1, y0};
 
   always @(*)
   begin
