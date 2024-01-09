@@ -1,0 +1,18 @@
+module convolution (
+  input [5:0] x0, x1, x2, x3, // Individual wires for x
+  input [5:0] h0, h1, h2, h3, // Individual wires for h
+  output reg [5:0] y0, y1, y2, y3, y4, y5, y6 // Individual wires for y
+);
+
+  always @(*)
+  begin
+    y6 <= h3 * x3;
+    y5 <= h3 * x2 + h2 * x3;
+    y4 <= h3 * x1 + h2 * x2 + h1 * x3;
+    y3 <= h3 * x0 + h2 * x1 + h1 * x2 + h0 * x3;
+    y2 <= h2 * x0 + h1 * x1 + h0 * x2;
+    y1 <= h1 * x0 + h0 * x1;
+    y0 <= h0 * x0;
+  end
+
+endmodule
