@@ -31,7 +31,8 @@ module ALU_Decoder(ALUOp,funct3,funct7,op,ALUControl);
     // Method 2
     assign ALUControl = (ALUOp == 2'b00) ? 3'b000 :
                         (ALUOp == 2'b01) ? 3'b001 :
-                        (ALUOp == 2'b11) ? 3'b111 :
+                        //((ALUOp == 2'b11) & (funct3 == 3'b000)) ? 3'b111 ://conv
+                        (ALUOp == 2'b11) ? 3'b100 ://load
                         ((ALUOp == 2'b10) & (funct3 == 3'b000) & ({op[5],funct7[5]} == 2'b11)) ? 3'b001 : 
                         ((ALUOp == 2'b10) & (funct3 == 3'b000) & ({op[5],funct7[5]} != 2'b11)) ? 3'b000 : 
                         ((ALUOp == 2'b10) & (funct3 == 3'b010)) ? 3'b101 : 
