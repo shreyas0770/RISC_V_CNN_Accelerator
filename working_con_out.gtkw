@@ -1,0 +1,69 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Wed Jan 10 08:28:12 2024
+[*]
+[dumpfile] "/home/vsduser/Git/RISC_V_CNN_Accelerator/dump.vcd"
+[dumpfile_mtime] "Wed Jan 10 08:24:15 2024"
+[dumpfile_size] 19303
+[savefile] "/home/vsduser/Git/RISC_V_CNN_Accelerator/working_con_out.gtkw"
+[timestart] 284
+[size] 1853 849
+[pos] -29 -29
+*-6.523884 662 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 223
+[signals_width] 276
+[sst_expanded] 1
+[sst_vpaned_height] 240
+@28
+tb.dut.clk
+tb.dut.rst
+@22
+tb.dut.ALU_ResultM[31:0]
+tb.dut.ALU_ResultW[31:0]
+@23
+tb.dut.ResultW[31:0]
+@28
+tb.dut.BranchE
+tb.dut.ForwardAE[1:0]
+tb.dut.ForwardBE[1:0]
+@22
+tb.dut.Imm_Ext_E[31:0]
+tb.dut.InstrD[31:0]
+@28
+tb.dut.MemWriteE
+tb.dut.ALUControlE[2:0]
+tb.dut.MemWriteM
+@22
+tb.dut.PCD[31:0]
+tb.dut.PCE[31:0]
+tb.dut.PCPlus4D[31:0]
+@28
+tb.dut.ALUSrcE
+@22
+tb.dut.PCPlus4E[31:0]
+tb.dut.PCPlus4M[31:0]
+tb.dut.PCPlus4W[31:0]
+@28
+tb.dut.PCSrcE
+@22
+tb.dut.PCTargetE[31:0]
+tb.dut.RD1_E[31:0]
+tb.dut.RD2_E[31:0]
+tb.dut.RDW[4:0]
+tb.dut.RD_E[4:0]
+tb.dut.RD_M[4:0]
+tb.dut.RS1_E[4:0]
+tb.dut.RS2_E[4:0]
+tb.dut.ReadDataW[31:0]
+@28
+tb.dut.RegWriteE
+tb.dut.RegWriteM
+tb.dut.RegWriteW
+tb.dut.ResultSrcE
+tb.dut.ResultSrcM
+tb.dut.ResultSrcW
+@22
+tb.dut.WriteDataM[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

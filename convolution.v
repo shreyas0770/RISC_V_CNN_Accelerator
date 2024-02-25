@@ -12,19 +12,19 @@ module convolution(
     // Break A into x0, x1, x2, x3
     always @(*)
     begin
-        x0 = A[4:0];
-        x1 = A[9:5];
-        x2 = A[14:10];
-        x3 = A[19:15];
+        x0 = A[3:0];
+        x1 = A[7:4];
+        x2 = A[11:8];
+        x3 = A[15:12];
     end
 
     // Break B into h0, h1, h2, h3
     always @(*)
     begin
-        h0 = B[4:0];
-        h1 = B[9:5];
-        h2 = B[14:10];
-        h3 = B[19:15];
+        h0 = B[3:0];
+        h1 = B[7:4];
+        h2 = B[11:8];
+        h3 = B[15:12];
     end
 
     always @(*)
@@ -41,7 +41,7 @@ module convolution(
     // Concatenate outputs
     always @(*)
     begin
-        Result = {2'b00, y6, y5, y4, y3, y2, y1, y0};
+        Result = {4'b0000, y6, y5, y4, y3, y2, y1, y0};
     end
 
 endmodule
