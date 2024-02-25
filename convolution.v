@@ -2,7 +2,7 @@
 module convolution(
     input [31:0] A,
     input [31:0] B,
-    output reg [31:0] Result
+    output  [31:0] Result
 );
 
     reg [3:0] x0, x1, x2, x3; // Individual wires for x
@@ -39,10 +39,13 @@ module convolution(
     end
 
     // Concatenate outputs
-    always @(*)
+    /*always @(*)
     begin
-        Result = {4'b0000, y6, y5, y4, y3, y2, y1, y0};
-    end
+        //Result = {4'b0000, y6, y5, y4, y3, y2, y1, y0};
+        Result = 32'h01010101;
+    end */
+    assign Result = {4'b0000, y6, y5, y4, y3, y2, y1, y0};
+    //assign Result = 32'h01010101;
 
 endmodule
 

@@ -1,5 +1,5 @@
 $date
-	Sun Feb 25 15:07:07 2024
+	Sun Feb 25 16:16:09 2024
 $end
 $version
 	Icarus Verilog
@@ -194,9 +194,9 @@ $var wire 1 D" Cout $end
 $var wire 32 E" B [31:0] $end
 $var wire 32 F" A [31:0] $end
 $scope module c1 $end
-$var wire 32 G" B [31:0] $end
-$var wire 32 H" A [31:0] $end
-$var reg 32 I" Result [31:0] $end
+$var wire 32 G" Result [31:0] $end
+$var wire 32 H" B [31:0] $end
+$var wire 32 I" A [31:0] $end
 $var reg 4 J" h0 [3:0] $end
 $var reg 4 K" h1 [3:0] $end
 $var reg 4 L" h2 [3:0] $end
@@ -669,8 +669,6 @@ xC"
 x-"
 bx 2"
 bx B"
-b0xxxxxxxxxxxxxxxxxxxxxxxxxxxx @"
-b0xxxxxxxxxxxxxxxxxxxxxxxxxxxx I"
 b0 Y
 b0 z
 b0 S
@@ -687,6 +685,8 @@ bx T"
 bx U"
 bx V"
 bx W"
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxx @"
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxx G"
 bx X"
 b100010000100010000000100011011 o"
 b100010000100010000000100011011 t"
@@ -701,7 +701,7 @@ b110111 r
 b110111 u
 bx /"
 bx E"
-bx G"
+bx H"
 bx Z"
 bx A"
 bx Q"
@@ -726,7 +726,7 @@ bx ["
 bx g"
 bx 0"
 bx F"
-bx H"
+bx I"
 bx b"
 b10000 k"
 b10000 x"
@@ -794,14 +794,14 @@ b1 *#
 1-"
 b0 2"
 b0 B"
-b0 @"
-b0 I"
 b0 R"
 b0 S"
 b0 T"
 b0 U"
 b0 V"
 b0 W"
+b0 @"
+b0 G"
 b0 X"
 b0 A"
 b0 M"
@@ -818,7 +818,7 @@ b100010000000110101011 o"
 b100010000000110101011 t"
 b0 /"
 b0 E"
-b0 G"
+b0 H"
 b0 Z"
 b0 Q"
 b0 P"
@@ -843,7 +843,7 @@ b0 ["
 b0 g"
 b0 0"
 b0 F"
-b0 H"
+b0 I"
 b0 b"
 b10000 8
 b10000 U
@@ -949,8 +949,6 @@ x-"
 1Q
 bx 2"
 bx B"
-b0xxxxxxxxxxxxxxxxxxxxxxxxxxxx @"
-b0xxxxxxxxxxxxxxxxxxxxxxxxxxxx I"
 b1 Y
 b1 z
 bx M"
@@ -963,6 +961,8 @@ bx T"
 bx U"
 bx V"
 bx W"
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxx @"
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxx G"
 bx X"
 bx o"
 bx t"
@@ -973,7 +973,7 @@ b101011 r
 b101011 u
 bx /"
 bx E"
-bx G"
+bx H"
 bx Z"
 bx A"
 bx Q"
@@ -998,7 +998,7 @@ bx ["
 bx g"
 bx 0"
 bx F"
-bx H"
+bx I"
 bx b"
 b0 .#
 b0 5#
