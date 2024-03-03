@@ -1,0 +1,3 @@
+012210ab //Loading 1221 into register x1 
+012111ab    //into register x3
+00119133  // convolution of x1 and x3 stored in regiser x2 . Opcode used - 0110011 , func3 - 001
