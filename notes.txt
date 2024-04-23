@@ -1,3 +1,19 @@
 012210ab //Loading 1221 into register x1 
 012111ab    //into register x3
 00119133  // convolution of x1 and x3 stored in regiser x2 . Opcode used - 0110011 , func3 - 001
+
+001000ab    input start
+001000ab
+002030ab
+001000ab
+002020ab
+002010ab
+002000ab
+001000ab
+001000ab        Kernel start
+001000ab
+000010ab
+000000ab
+001010ab
+001000ab
+00119133   //modified opcode used for linear convolution to winograd, so only op code matters. Thus using same code
