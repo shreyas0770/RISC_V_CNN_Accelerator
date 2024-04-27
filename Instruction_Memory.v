@@ -1,17 +1,3 @@
-// Copyright 2023 MERL-DSU
-
-//    Licensed under the Apache License, Version 2.0 (the "License");
-//    you may not use this file except in compliance with the License.
-//    You may obtain a copy of the License at
-
-//        http://www.apache.org/licenses/LICENSE-2.0
-
-//    Unless required by applicable law or agreed to in writing, software
-//    distributed under the License is distributed on an "AS IS" BASIS,
-//    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-//    See the License for the specific language governing permissions and
-//    limitations under the License.
-
 module Instruction_Memory(rst,A,RD);
 
   input rst;
@@ -22,20 +8,31 @@ module Instruction_Memory(rst,A,RD);
   
   assign RD = (rst == 1'b0) ? {32{1'b0}} : mem[A[31:2]];
 
+//  initial begin
+//    $readmemh("memfile.hex",mem);             //Commented cuz vivado doesnt support hex file
+//  end
+
+
+
   initial begin
-    $readmemh("memfile.hex",mem);
+ 
+        mem[0] = 32'h001000ab;  //Just to reset the working registers w0 - w14 --> Dummy Value
+        mem[1] = 32'h001000ab;
+        mem[2] = 32'h001000ab;
+        mem[3] = 32'h002030ab;
+        mem[4] = 32'h001000ab;
+        mem[5] = 32'h001020ab;
+        mem[6] = 32'h002010ab;
+        mem[7] = 32'h002000ab;
+        mem[8] = 32'h001000ab;
+        mem[9] = 32'h001000ab;
+        mem[10] = 32'h001000ab;
+        mem[11] = 32'h000010ab;
+        mem[12] = 32'h000000ab;
+        mem[13] = 32'h001010ab;
+        mem[14] = 32'h001000ab;
+        mem[15] = 32'h00119133; //Temporarily used linear_conv's opcode for wino , should be updated
+        
   end
-
-
-
- /* initial begin
-    mem[0] = 32'hFFC4A303;
-    mem[1] = 32'h00832383;
-    mem[0] = 32'h0064A423;
-    mem[1] = 32'h00B62423;
-    mem[0] = 32'h0062E233;
-    mem[1] = 32'h00B62423;
-
-  end*/
 
 endmodule

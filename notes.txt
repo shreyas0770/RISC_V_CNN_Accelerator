@@ -17,3 +17,17 @@
 001010ab
 001000ab
 00119133   //modified opcode used for linear convolution to winograd, so only op code matters. Thus using same code
+
+
+0110011 --> Now this is opcode for wino //temp change
+
+//INPUT MATRIX
+1,0,1,0
+2,3,1,0
+1,2,2,1
+2,0,1,0
+
+//KERNEL MATRIX
+1,0,1
+0,1,0
+1,1,1
