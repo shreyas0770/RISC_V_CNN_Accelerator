@@ -53,6 +53,6 @@ module testbench;
 
         // End simulation
         $finish;
-    end
+  end
 
 endmodule

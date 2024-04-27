@@ -16,7 +16,7 @@ module tb();
         #200;
         rst <= 1'b1;
         #5000;
-        $finish;    
+        //$finish;    
     end
 
     initial begin
