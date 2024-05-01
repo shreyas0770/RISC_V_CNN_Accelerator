@@ -1,5 +1,3 @@
-
-
 module ALU_Decoder(ALUOp,funct3,funct7,op,ALUControl);
 
     input [1:0]ALUOp;
@@ -21,7 +19,9 @@ module ALU_Decoder(ALUOp,funct3,funct7,op,ALUControl);
                         (ALUOp == 2'b01) ? 3'b001 :
                         //((ALUOp == 2'b11) & (funct3 == 3'b000)) ? 3'b100 :
                         (ALUOp == 2'b11) ? 3'b100 ://load
-                        ((ALUOp == 2'b10) & (funct3 == 3'b001)) ? 3'b111 : //wino
+                        //((ALUOp == 2'b10) & (funct3 == 3'b001)) ? 3'b111 : //wino
+                        ((ALUOp == 2'b10) & (funct3 == 3'b001)) ? 3'b111 : //2D conv. Can be used alternatively for now!
+                        ((ALUOp == 2'b10) & (funct3 == 3'b011)) ? 3'b110 : //relu
                         ((ALUOp == 2'b10) & (funct3 == 3'b000) & ({op[5],funct7[5]} == 2'b11)) ? 3'b001 : 
                         ((ALUOp == 2'b10) & (funct3 == 3'b000) & ({op[5],funct7[5]} != 2'b11)) ? 3'b000 : 
                         ((ALUOp == 2'b10) & (funct3 == 3'b010)) ? 3'b101 : 
