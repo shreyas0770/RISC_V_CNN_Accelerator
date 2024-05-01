@@ -1,6 +1,6 @@
 
-module CNNConvolution(inp10, inp11, inp12, inp13 ,inp20,inp21,inp22,inp23,inp31,
-inp32,inp33,inp30,inp40,inp41,inp42,inp43,ker10,ker11,ker12,ker20,ker21,ker22,
+module CNNConvolution(inp10, inp11, inp12, inp13 ,inp20,inp21,inp22,inp23,inp30,inp31,
+inp32,inp33,inp40,inp41,inp42,inp43,ker10,ker11,ker12,ker20,ker21,ker22,
 ker30,ker31,ker32,out10,out11,out20,out21);
 
 //input [7:0] inp1 [3:0];

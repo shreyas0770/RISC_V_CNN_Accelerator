@@ -23,7 +23,7 @@ module ALU(
     reg [31:0] w0, w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13;
     wire [31:0] wino_out,relu_out,convo_out;
     
-    reg [31:0] pre_wino, pre_relu;
+    reg [31:0] pre_wino, pre_relu, pre_convo;
     
     always @(*)
     begin
