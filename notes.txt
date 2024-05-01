@@ -34,3 +34,11 @@
 1,0,1
 0,1,0
 1,1,1
+
+
+1. In ALU , AND and OR should be removed and RELU should be added
+2. Pruning module to be integerated
+3. If wino is called, input should pass through relu and then wino, kernel through pruning module and then wino
+4. Calculate wino and normal conv for different values (preferably kernel for vertical and horizontal matrix)
+5. Add delay in normal convolution
+6. Synthesis and Implementation to get timing and area report
