@@ -42,3 +42,10 @@
 4. Calculate wino and normal conv for different values (preferably kernel for vertical and horizontal matrix)
 5. Add delay in normal convolution
 6. Synthesis and Implementation to get timing and area report
+
+
+commands to run on ubuntu:
+
+iverilog -o out.vvp pipeline_tb.v
+vvp out.vvp
+gtkwave dump.vcd
