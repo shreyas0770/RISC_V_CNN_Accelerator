@@ -16,22 +16,39 @@ module Instruction_Memory(rst,A,RD);
 
   initial begin
  
-        mem[0] = 32'h001000ab;  //Just to reset the working registers w0 - w14 --> Dummy Value
-        mem[1] = 32'h001000ab;
-        mem[2] = 32'h001000ab;
-        mem[3] = 32'h002030ab;
-        mem[4] = 32'h001000ab;
-        mem[5] = 32'h001020ab;
-        mem[6] = 32'h002010ab;
-        mem[7] = 32'h002000ab;
+//        mem[0] = 32'h001000ab;  //Just to reset the working registers w0 - w14 --> Dummy Value
+//        mem[1] = 32'h001000ab;
+//        mem[2] = 32'h001000ab;
+//        mem[3] = 32'h002030ab;
+//        mem[4] = 32'h001000ab;
+//        mem[5] = 32'h001020ab;
+//        mem[6] = 32'h002010ab;
+//        mem[7] = 32'h002000ab;
+//        mem[8] = 32'h001000ab;
+//        mem[9] = 32'h001000ab;
+//        mem[10] = 32'h001000ab;
+//        mem[11] = 32'h000010ab;
+//        mem[12] = 32'h000000ab;
+//        mem[13] = 32'h001010ab;
+//        mem[14] = 32'h001000ab;
+//        mem[15] = 32'h00119133; //Temporarily used linear_conv's opcode for wino , should be updated
+              
+        //mem[0] = 32'h001000ab;  //Just to reset the working registers w0 - w14 --> Dummy Value
+        mem[0] = 32'h001020ab;      //New matrix --> Calculation in sanjana book
+        mem[1] = 32'h003010ab;
+        mem[2] = 32'h003010ab;
+        mem[3] = 32'h002010ab;
+        mem[4] = 32'h004020ab;
+        mem[5] = 32'h001030ab;
+        mem[6] = 32'h003020ab;
+        mem[7] = 32'h004010ab;
         mem[8] = 32'h001000ab;
-        mem[9] = 32'h001000ab;
+        mem[9] = 32'h0FF000ab;
         mem[10] = 32'h001000ab;
-        mem[11] = 32'h000010ab;
-        mem[12] = 32'h000000ab;
-        mem[13] = 32'h001010ab;
-        mem[14] = 32'h001000ab;
-        mem[15] = 32'h00119133; //Temporarily used linear_conv's opcode for wino , should be updated
+        mem[11] = 32'h0FF000ab;
+        mem[12] = 32'h001000ab;
+        mem[13] = 32'h0FF000ab;
+        mem[14] = 32'h00119133; //Temporarily used linear_conv's opcode for wino , should be updated
         
   end
 

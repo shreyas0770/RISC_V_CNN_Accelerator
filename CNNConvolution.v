@@ -24,7 +24,7 @@ output reg [7:0] out20, out21;
 always@(*)
 begin 
     out10 = (inp10*ker10)+(inp11*ker11)+(inp12*ker12)+(inp20*ker20)+(inp21*ker21)+(inp22*ker22)+(inp30*ker30)+(inp31*ker31)+(inp32*ker32);
-    out11 = (inp11*ker10)+(inp12*ker11)+(inp13*ker12)+(inp21*ker20)+(inp22*ker21)+(inp23*ker22)+(inp31*ker30)+(inp32*ker31)+(inp32*ker32);
+    out11 = (inp11*ker10)+(inp12*ker11)+(inp13*ker12)+(inp21*ker20)+(inp22*ker21)+(inp23*ker22)+(inp31*ker30)+(inp32*ker31)+(inp33*ker32);
     out20 = (inp20*ker10)+(inp21*ker11)+(inp22*ker12)+(inp30*ker20)+(inp31*ker21)+(inp32*ker22)+(inp40*ker30)+(inp41*ker31)+(inp42*ker32);
     out21 = (inp21*ker10)+(inp22*ker11)+(inp23*ker12)+(inp31*ker20)+(inp32*ker21)+(inp33*ker22)+(inp41*ker30)+(inp42*ker31)+(inp43*ker32);
 end

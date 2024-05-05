@@ -24,16 +24,28 @@
 
 
 
-//INPUT MATRIX
+//INPUT MATRIX          //old
 1,0,1,0
 2,3,1,0
 1,2,2,1
 2,0,1,0
 
-//KERNEL MATRIX
+//KERNEL MATRIX         //old
 1,0,1
 0,1,0
 1,1,1
+
+
+//NEW MATRIX
+1,2,3,1
+3,1,2,1
+4,2,1,3
+3,2,3,1
+
+//NEW KERNEL
+1,0,-1
+1,0,-1
+1,0,-1
 
 
 1. In ALU , AND and OR should be removed and RELU should be added
