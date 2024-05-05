@@ -25,7 +25,26 @@ module Instruction_Memory(rst,A,RD);
 
   initial begin
                
-        mem[0] = 32'h001020ab;          //Start of Input Matrix data //New matrix --> Calculation in sanjana book
+//        mem[0] = 32'h001020ab;          //Start of Input Matrix data //New matrix --> Calculation in sanjana book
+//        mem[1] = 32'h003010ab;
+//        mem[2] = 32'h003010ab;
+//        mem[3] = 32'h002010ab;
+//        mem[4] = 32'h004020ab;
+//        mem[5] = 32'h001030ab;
+//        mem[6] = 32'h003020ab;
+//        mem[7] = 32'h004010ab;
+//        mem[8] = 32'h037010ab;          //Start of Kernel data
+//        mem[9] = 32'h0C9000ab;
+//        mem[10] = 32'h037010ab;
+//        mem[11] = 32'h0C9000ab;
+//        mem[12] = 32'h037010ab;
+//        mem[13] = 32'h0C9000ab;         //Loading data ends here
+//        //mem[14] = 32'h00119133;       //Temporarily used linear_conv's opcode for wino , should be updated
+//       // mem[14] = 32'h00003033;         //uncomment for normal winograd convolution as output
+//        //mem[14] = 32'h00001033;       //uncomment for normal convolution as output
+//        mem[14] = 32'h00002033;       //uncomment for pruned winograd convolution as output
+     
+     mem[0] = 32'h001020ab;          //Start of Input Matrix data //New matrix --> Calculation in sanjana book
         mem[1] = 32'h003010ab;
         mem[2] = 32'h003010ab;
         mem[3] = 32'h002010ab;
@@ -43,7 +62,7 @@ module Instruction_Memory(rst,A,RD);
         mem[14] = 32'h00003033;         //uncomment for normal winograd convolution as output
         //mem[14] = 32'h00001033;       //uncomment for normal convolution as output
         //mem[14] = 32'h00002033;       //uncomment for pruned winograd convolution as output
-        
+           
   end
 
 endmodule
